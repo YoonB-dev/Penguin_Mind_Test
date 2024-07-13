@@ -4,7 +4,7 @@ function setShare(){
     var resultAlt = resultImg.firstElementChild.alt;
     const shareTitle = '펭귄으로 보는 심리 테스트 결과';
     const shareDesc = infoList[resultAlt].name;
-    const shareImg = url + 'img/pen' + resultAlt + '.png';
+    const shareImg = url + 'img/pen' + (resultAlt+1) + '.png';
     const shareURL = url + 'page/result_' + resultAlt + '.html';
 
     Kakao.Share.sendDefault({
