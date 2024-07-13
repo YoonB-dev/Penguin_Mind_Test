@@ -1,5 +1,4 @@
-const url = 'https://penguin-mind-test.netlify.app/';
-
+const url = 'https://penguin-mind-test.netlify.app/'
 function setShare(){
     var resultImg = document.querySelector('#resultImg');
     var resultAlt = resultImg.firstElementChild.alt;
@@ -8,8 +7,7 @@ function setShare(){
     const shareImg = url + 'img/pen' + resultAlt + '.png';
     const shareURL = url + 'page/result_' + resultAlt + '.html';
 
-
-    Kakao.link.sendDefault({
+    Kakao.Share.sendDefault({
         objectType: 'feed',
         content: {
         title: shareTitle,
